@@ -58,6 +58,21 @@ class IndependenceDay extends Movie{
     }
 }
 
+//step 11 another class
+class MaizeRunner extends Movie{
+
+    //step 12 constructor
+    public MaizeRunner() {
+        super("Maize Runner");
+    }
+
+    //step 13 override
+    @Override
+    public String plot() {
+        return "Kids on peyote thing they live in a fantasy land";
+    }
+}
+
 
 
 
