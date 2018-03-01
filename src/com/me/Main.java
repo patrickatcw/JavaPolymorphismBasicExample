@@ -23,6 +23,11 @@ class Movie{
         return "No plot here";
     }
 
+    //step 23a had to create a getter for getName
+    public String getName() {
+        return name;
+    }
+
 }
 
 //step 5 create more classes that will inherit from base Movie class
@@ -106,6 +111,17 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //step 23 create a for loop to cycle through movie options
+        //step 23a added getName getter in movie class
+        //step 24 run it....
+        for(int i=1; i < 11; i++){
+            Movie movie = randomMovie();
+            System.out.println("Movie #" + i +
+                    " : " + movie.getName() + "\n" +        //had to create getter step 23a, under step 4
+                    "Plot: " + movie.plot() + "\n");        // "\n" just creates a new line
+
+        }
+
     }
 
 
@@ -134,5 +150,48 @@ public class Main {
 
     }
 }
+
+//example of results;
+/*
+Random number generated was: 5
+Movie #1 : Forgettable
+Plot: No plot here
+
+Random number generated was: 1
+Movie #2 : Jaws
+Plot: A great white shark dealing with an existential crises
+
+Random number generated was: 2
+Movie #3 : Independence Day
+Plot: Randy Quad is a drunk pilot
+
+Random number generated was: 3
+Movie #4 : Maize Runner
+Plot: Kids on peyote thing they live in a fantasy land
+
+Random number generated was: 5
+Movie #5 : Forgettable
+Plot: No plot here
+
+Random number generated was: 3
+Movie #6 : Maize Runner
+Plot: Kids on peyote thing they live in a fantasy land
+
+Random number generated was: 5
+Movie #7 : Forgettable
+Plot: No plot here
+
+Random number generated was: 1
+Movie #8 : Jaws
+Plot: A great white shark dealing with an existential crises
+
+Random number generated was: 3
+Movie #9 : Maize Runner
+Plot: Kids on peyote thing they live in a fantasy land
+
+Random number generated was: 1
+Movie #10 : Jaws
+Plot: A great white shark dealing with an existential crises
+ */
 
 
