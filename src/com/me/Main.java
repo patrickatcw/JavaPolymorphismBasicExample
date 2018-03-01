@@ -25,6 +25,22 @@ class Movie{
 
 }
 
+//step 5 create more classes that will inherit from base Movie class
+class Jaws extends Movie{
+
+    //step 6 create constructor, a little different structure here
+    public Jaws() {
+        super("Jaws");
+    }
+
+    //step 7 plot method, this will override plot method in movie class
+    public String plot(){
+        return "A great white shark dealing with an existential crises";
+
+    }
+
+}
+
 
 
 
