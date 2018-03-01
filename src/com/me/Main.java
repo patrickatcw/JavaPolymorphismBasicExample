@@ -7,6 +7,28 @@ package com.me;
 
 //working with movies here.....
 
+//step 1 creating the super class Movie
+class Movie{
+
+    //step 2 creating fields
+    private String name;
+
+    //step 3 create constructor with purpose to set value for field
+    public Movie(String name) {
+        this.name = name;
+    }
+
+    //step 4 create another method for plot of movie
+    public String plot(){
+        return "No plot here";
+    }
+
+}
+
+
+
+
+
 public class Main {
 
     public static void main(String[] args) {
