@@ -88,6 +88,19 @@ class StarWars extends Movie{
     }
 }
 
+//step 17 another class but a little different...
+class Forgettable extends Movie {
+
+    //step 18 constructor
+    public Forgettable() {
+        super("Forgettable");
+    }
+
+    //step 19
+    //no plot override for this one
+
+}
+
 
 
 
