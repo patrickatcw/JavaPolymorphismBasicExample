@@ -73,6 +73,21 @@ class MaizeRunner extends Movie{
     }
 }
 
+//step 14 another class
+class StarWars extends Movie{
+
+    //step 15 constructor, which again is changed from menu created
+    public StarWars() {
+        super("Star Wars");
+    }
+
+    //step 16 override
+    @Override
+    public String plot() {
+        return "A close look at bad parenting";
+    }
+}
+
 
 
 
