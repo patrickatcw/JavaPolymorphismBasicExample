@@ -41,6 +41,23 @@ class Jaws extends Movie{
 
 }
 
+//step 8 another class
+class IndependenceDay extends Movie{
+
+    //step 9 make your own constructor
+    public IndependenceDay(){
+        super("Independence Day");
+    }
+
+    //step 10 doing an override through menu
+    @Override
+    public String plot() {
+        //return super.plot();, changed to...
+        return "Randy Quad is a drunk pilot";
+
+    }
+}
+
 
 
 
